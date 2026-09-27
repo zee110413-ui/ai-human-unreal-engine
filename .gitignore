@@ -1,0 +1,26 @@
+# Whitelist approach: ignore everything at root, then re-include source/config
+/*
+!/.gitignore
+!/*.uproject
+!/*.sln
+!/*.vsconfig
+!/Source/
+!/Config/
+!/Books/
+
+# Unreal Engine generated / cache folders (in case they slip in under kept dirs)
+**/Binaries/
+**/Intermediate/
+**/Saved/
+**/DerivedDataCache/
+**/.vs/
+
+# Build logs
+*.log
+
+# IDE junk
+*.sdf
+*.opensdf
+*.VC.db
+*.opendb
+*.suo
